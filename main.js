@@ -125,6 +125,8 @@ const hierarchy = (data) => {
     });
     console.info(tree);
     return tree;
+
+    //Fabrice
 };
 
 // print
