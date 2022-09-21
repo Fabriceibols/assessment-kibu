@@ -119,7 +119,14 @@ const hierarchy = (data) => {
         item.children = childOf[slug];
         reportsTo ? (childOf[reportsTo] = childOf[reportsTo] || []).push(item) : tree.push(item);
     });
+    tree.forEach((element,index) => {
+      console.log(index);
+      // numCallbackRuns++;
+    });
+    console.info(tree);
     return tree;
+
+    //Fabrice
 };
 
 // print
